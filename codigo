@@ -1,0 +1,11 @@
+n = int(input('Digite um número natural: '))
+x = n - 1
+r = n
+for c in range(n, 1, -1):
+    r = r*x
+    x = x-1
+if n == 0 or n == 1:
+    print('O fatorial de {} é 1.'.format(n))
+else:
+    print('O fatorial de {} é {}.'.format(n, r))
+    
